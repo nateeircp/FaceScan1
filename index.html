@@ -177,7 +177,7 @@
             lucide.createIcons();
             const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
             applyTheme(savedTheme);
-            gasWebAppUrl = localStorage.getItem(GAS_URL_KEY);
+            gasWebAppUrl = GAS_URL_KEY;
             if (!gasWebAppUrl) {
                 document.getElementById('setup-modal').style.display = 'flex';
             } else {
@@ -649,5 +649,6 @@
     </script>
 </body>
 </html>
+
 
 
